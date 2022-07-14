@@ -1,38 +1,72 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+  width: 100%;
+  height: 110px;
+  background-color: black;
+}
+
+.cart-img {
+  width: 30px;
+  height: auto;
+}
+
+.nav-links{
+  display: flex;
+  align-items: center;
+}
+
+.navigation a{
+  margin: 5px 30px 5px 30px;
   color: white;
+  font-size: 24px;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.home, .contacts, .shop, .cart{
+  position: relative;
+  display: flex;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shop{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: fit-content;
+  gap: 10px;
+}
+
+.shopCard{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 200px;
+  height: 220px;
+  top: 110px;
+}
+
+.shopCardImage{
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+
+.shopCardImage>img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.shopCardDetails{
+
 }
