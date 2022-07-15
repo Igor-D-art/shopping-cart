@@ -1,26 +1,31 @@
 import React from "react";
 
 function ShopCard(props) {
+
+    const product = props.product;
     
     return (
         <div className="shopCard">
             <div className="shopCardImage">
-                <img src={props.image} alt="" />
+                <img src={product.image} alt={product.name} />
             </div>
 
             <div className="shopCardDetails">
-                <div>
-                    <h3>{props.title}</h3>
+                <div className="prod-title">
+                    <h3>{product.title}</h3>
                 </div>
                
-                <div>
-                    <h3>{props.price}</h3>
+                <div className="prod-price">
+                    <h3>$ {product.price}</h3>
                 </div>
                 
-
             </div>
             
-            <button className="addShop">Add to cart</button>
+            <button className="add-to-cart"
+                    onClick={() => {
+                        props.addToCart(product);
+                    }
+                }>Add to cart</button>
             
         </div>
     )
