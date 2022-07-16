@@ -19,7 +19,8 @@ function Navigation() {
     return (
         <nav className="navigation">
             <Link to={'/'}><h1 className="shop-name">BARAHLISHKO</h1></Link>
-            <ul className="nav-links">
+            <div className="link-container">
+                <ul className="nav-links">
                 <div className="link-wrapper">
                     <Link to={'/'}> Home </Link>
                 </div>
@@ -46,6 +47,7 @@ function Navigation() {
                     </Link>
                 </div>
             </ul>
+            </div>
         </nav>
     )
 

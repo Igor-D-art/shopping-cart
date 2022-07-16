@@ -19,10 +19,16 @@
   text-decoration: underline;
 } */
 
-.nav-links{
+.link-container{
   display: flex;
   justify-content: space-around;
   width: 40%;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
   position: relative;
 }
 
@@ -199,6 +205,7 @@
   align-items: center;
   width: 50%;
   margin-left: 15vw;
+  margin-bottom: 20px;
 }
 
 .cartCard{

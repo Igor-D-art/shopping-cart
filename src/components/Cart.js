@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import CartContext from "../context/CartContext";
 import CartCard from "./CartCard";
+import { round } from "mathjs";
 
 function Cart(props) {
 
@@ -10,7 +11,8 @@ function Cart(props) {
     const totalPrice = () => {
         let sum = 0;
         for (let i = 0; i < cart.length; i++){
-            sum += parseFloat((cart[i].price * cart[i].qty).toFixed(2))
+            sum += parseFloat((cart[i].price * cart[i].qty));
+            sum = round(sum, 2)
         }
         return sum;
     }

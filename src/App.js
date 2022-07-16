@@ -9,17 +9,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ProductsProvider } from './context/ProductsContext';
 import { CartProvider } from './context/CartContext';
 import { useEffect } from 'react';
+import { useLocalStorage } from './utils/LocalStorage';
 
 
 function App() {
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]);
+  // const [cart, setCart] = useState([]);
+
+  // const [products, setProducts] = useLocalStorage('products',[]);
+  const [cart, setCart] = useLocalStorage('cart',[]);
 
   useEffect(() => {
     if (products.length===0) {
         fetchItems()
       }
-     
     },[])
 
 
