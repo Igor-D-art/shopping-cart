@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`General navigation check Navigation header matches snapshot (contains links to Home, shop, contacts, cart 1`] = `
+<nav
+  class="navigation"
+  data-testid="header"
+>
+  <a
+    href="/"
+  >
+    <h1
+      class="shop-name"
+    >
+      BARAHLISHKO
+    </h1>
+  </a>
+  <div
+    class="link-container"
+  >
+    <ul
+      class="nav-links"
+    >
+      <div
+        class="link-wrapper"
+      >
+        <a
+          href="/"
+        >
+           Home 
+        </a>
+      </div>
+      <div
+        class="link-wrapper"
+      >
+        <a
+          href="/shop"
+        >
+           Shop 
+        </a>
+      </div>
+      <div
+        class="link-wrapper"
+      >
+        <a
+          href="/contacts"
+        >
+           Contacts 
+        </a>
+      </div>
+      <div
+        class="link-wrapper"
+      >
+        <a
+          href="/cart"
+        >
+          <img
+            alt=""
+            class="cart-img"
+            src="images/cart.png"
+          />
+        </a>
+      </div>
+    </ul>
+  </div>
+</nav>
+`;

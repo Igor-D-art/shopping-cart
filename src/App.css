@@ -120,19 +120,31 @@
   position: relative;
   flex-direction: column;
   width: 370px;
-  height: 420px;
+  height:370px;
   min-width: 200px;
-  min-height: 220px;
-  justify-content:space-between;
-  align-items: center;
   padding: 10px;
   box-shadow: 5px 5px 2px 1px rgb(114, 114, 114);
   border: 1px solid black;
 }
 
+.shopCard>a{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width:100%;
+  height: 100%;
+  min-width: 200px;
+  min-height: 220px;
+  justify-content:space-between;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
 .shopCardImage>img {
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 100%;
 }
 
 .prod-title{
@@ -223,6 +235,7 @@
   display: flex;
   width: 40%;
   justify-content: center;
+  align-items: center;
 }
 
 .cartCardImage>img {
